@@ -1,38 +1,548 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  /* position: relative; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 5vw;
+  height: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.menu {
+  position: absolute;
+  right: 3vw;
+  top: 5.8vh;
+  width: 10vw;
+  height: 3vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.media {
+  width: 12.59vw;
+  height: 14.9vh;
+}
+
+.media-1 {
+  width: 8.59vw;
+  height: 14.9vh;
+}
+
+.scr-btn {
+  padding: 2.2vh 5vh;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.sc-btn {
+  padding: 2.2vh 5vh;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.sc-btn-2 {
+  padding: 1vh 4.5vh;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #4c4c4c;
+}
+
+
+/* NAVBAR */
+.navbar {
+  height: 18vh;
+}
+
+
+.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+}
+
+.link:hover {
+  background-color: #000000;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+#login {
+  padding: 1.5vh 4vh;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+#signup {
+  padding: 1.5vh 4vh;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* SIGN UP */
+.signup-img {
+  width: 36vw;
+  height: 78vh;
+}
+
+.sign-head {
+  font-weight: 600;
+}
+
+.lbl {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  color: #8A8A8A;
+}
+
+/* INVEST */
+.invest-head-comp {
+  background: linear-gradient(90deg, #303030 -13.55%, #2a33ff 93.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: default;
+}
+
+/* LOGIN */
+.login-img {
+  width: 44vw;
+  height: 60vh;
+}
+
+/* HOME */
+.head {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.head-comp {
+  cursor: default;
+  font-weight: 600;
+  background: linear-gradient(174.44deg, #3D4094 67.85%, #853592 79.97%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+.sub-head {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #B1B1B1;
+}
+
+
+.sub {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+
+  color: #8A8A8A;
+}
+
+.login-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.first_img {
+  position: absolute;
+  right: 7vw;
+  top: 3vh;
+}
+
+.div-head {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 50px;
+}
+
+.md {
+  background: rgb(113 113 113 / 5%);
+}
+
+.med {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.patta {
+  width: 30vw;
+  height: 53vh;
+  cursor: pointer;
+  box-shadow: 7px 5px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cir {
+  border-radius: 10rem;
+  width: 7vw;
+  height: 14vh;
+  background-color: #ebe609;
+}
+
+.patta-lik {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* INVEST */
+
+.inv0 {
+  width: 30vw;
+  /* height: 101vh; */
+  cursor: pointer;
+  background-color: #fafffe;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inv0:hover {
+  background-color: #0000000f;
+}
+
+.inv1 {
+  width: 5.5vw;
+  height: 11vh;
+}
+
+.inv-name {
+  height: 10vh;
+}
+
+.inv-sec {
+  background: rgba(140, 255, 152, 0.68);
+  border-radius: 6px;
+  width: 13vw;
+  height: 5.5vh;
+  font-size: 16px;
+}
+
+.inv-divi {
+  height: 1.6vh;
+  background: linear-gradient(90deg, #00D8FF 0%, #4200FF 97.99%);
+  border-radius: 27px;
+}
+
+.inv-per {
+  background: rgba(140, 255, 152, 0.68);
+  border-radius: 6px;
+  width: 9vw;
+  height: 9vh;
+  font-size: 18px;
+}
+
+.inv2 {
+  margin-top: -7px;
+}
+
+.inv3 {
+  width: 17.9vw;
+}
+
+.buy {
+  color: green
+}
+
+.buy:hover {
+  color: white;
+  background-color: green;
+}
+
+/* RAISE */
+.raise-head-comp {
+  background: linear-gradient(90deg, #00FFFF -13.55%, #000AFF 93.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: default;
+}
+
+.raise_img {
+  width: 35vw;
+  height: 35vh;
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+}
+
+.raise-cards {
+  width: 100%;
+}
+
+/* FOOTER */
+.foot {
+  background: rgba(118, 123, 255, 0.11);
+  height: 75vh;
+}
+
+.f1 {
+  position: absolute;
+  right: 0;
+}
+
+.foot-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #161616;
+}
+
+.foot-link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  /* letter-spacing: 0.04em; */
+  color: #424242;
+}
+
+.ext-link {
+  color: #424242;
+  font-size: 1.3rem;
+}
+
+.ext-link:hover {
+  color: #000000;
+}
+
+.foot-sub {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  /* color: #424242; */
+  color: #8A8A8A;
+}
+
+.foot-contact {
+  font-weight: 600;
+}
+
+.foot-cnt {
+  color: #686868;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.foot-cnt:hover {
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* SUCCESS */
+.success {
+  height: 80vh;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+  .head {
+    font-size: 40px;
+    line-height: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sub-head {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .sub {
+    font-size: 14px;
+    line-height: 0px;
+  }
+
+  .navbar {
+    height: 11vh;
+  }
+
+  .logo {
+    width: 25.59vw;
+    height: 11.9vh;
+  }
+
+  .scr-btn {
+    padding: 1.2vh 3vh;
+  }
+
+  .home {
+    height: 90vh;
+  }
+
+  .raise {
+    height: 49vh;
+  }
+
+  .first_img {
+    width: 88vw;
+    height: 35vh;
+    position: absolute;
+    right: 6.5vw;
+    top: 73vh;
+  }
+
+  .raise_img {
+    width: 88vw;
+    height: 30vh;
+    position: absolute;
+    right: 6vw;
+    top: 50vh;
+
+  }
+
+  .raise-cards {
+    width: 90%;
+    margin-left: 2.4vh;
+    text-align: center;
+  }
+
+  .login {
+    margin-left: 0vw;
+  }
+
+  .sign-head {
+    text-align: center;
+  }
+
+  .sc-btn {
+    padding: 1vh 5vh;
+  }
+
+  .sc-btn-2 {
+    padding: 0.5vh 4.5vh;
+    font-size: 7px;
+  }
+
+  .foot {
+    height: 150vh;
+  }
+
+  .f0 {
+    flex-direction: column;
+  }
+
+  .f1 {
+    flex-direction: column;
+    position: static;
+    text-align: center;
+  }
+
+  .f2 {
+    margin-right: 10vw;
+  }
+
+  .f2-txt {
+    margin-left: 2vw;
+  }
+
+  .f2-icons {
+    margin-left: 19vw;
+  }
+
+  .inv {
+    height: 14vh;
+  }
+
+  .inv0 {
+    width: 94.5vw;
+    height: 79vh;
+  }
+
+  .inv1 {
+    width: 22vw;
+    height: 9vh;
+  }
+
+  .inv3 {
+    width: 54.9vw;
+    font-size: .8rem;
+  }
+
+  .inv-sec {
+    width: 40vw;
+    height: 4vh;
+    font-size: 13px;
+  }
+
+  .inv-divi {
+    height: 0.8vh;
+  }
+
+  .inv-per {
+    width: 29vw;
+    height: 7vh;
+  }
+
+  .media {
+    width: 25.59vw;
+    height: 4.9vh;
+  }
+
+  .div-head {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .patta {
+    width: 93vw;
+    height: 38vh;
+  }
+
+  .cir {
+    width: 21vw;
+    height: 10vh;
+  }
+
+  .success {
+    height: 55vh;
+  }
+
+  .success .h3 {
+    font-size: larger;
   }
 }
