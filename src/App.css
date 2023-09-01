@@ -10,6 +10,9 @@ body {
   width: 5vw;
   height: 10vh;
 }
+.container{
+  color: #000000;
+}
 
 
 .menu {
@@ -287,7 +290,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  text-fill-color: blue;
   cursor: default;
 }
 

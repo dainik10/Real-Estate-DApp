@@ -14,7 +14,7 @@ const SellEstate = () => {
           <div className="col mb-2 ps-4 d-flex flex-column position-static">
             <div className='h1 head'>Owners sell your<br />Estate<br /><Link to='#' className='raise-head-comp'>With zero paper work<br /></Link>
             </div>
-            <div className='h6 sub-head mt-2'>Sell your properties and Estates Online<br />With new and secured technologies.
+            <div className='h6 sub-head mt-2'>Sell your properties and Estates Online<br />With new and secured technologies(Exceptional-Handlers).
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const SellEstate = () => {
         </div>
 
         <form>
-          <div className='h3'>AB DAINIK YAHA SE FORM BANA AGAR JARURAT PADI TO<br />MEKO PATA NHI AGE KYA KARNA H ISILIYE CHODD DIYA <br />AB YAHA SE TU BANA LE JAISE SAHI LAGE</div>
+          <div className='h3'>Exceptional Handlers. We will connect it with the smart contract to connect with third party and sell and purchase the property from the comfort of your zone.</div>
         </form>
       </div>
       <Footer />
