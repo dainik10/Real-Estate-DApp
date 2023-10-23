@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import menu from '../Assets/MENU.svg'
 import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../Assets/Logo.png'
+import { ContractContext } from '../context/ContractContext';
 
 const Navbar = () => {
+
+    const { account, connectWallet } = useContext(ContractContext)
+
     return (
         <div className="container mt-0">
             <nav className="navbar navbar-expand-lg">
@@ -22,7 +26,7 @@ const Navbar = () => {
                                 <a className="nav-link link px-3" aria-current="page" href="#footer">Contact Us</a >
                             </li>
                             <div className="d-flex">
-                                <Link className="btn btn-outline-primary btn-lg" id='signup'>Connect</Link>
+                                <button className={account ? `btn btn-outline-primary btn-lg user-select-none` : `btn btn-outline-primary btn-lg`} onClick={account ? e => e.preventDefault() : connectWallet}>{account ? account.slice(0, 5) + '.......' + account.slice(-1) : 'Connect'}</button>
                             </div>
                         </ul>
                     </div>
